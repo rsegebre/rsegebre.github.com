@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>rsegebre</title><link href="http://rsegebre.com" rel="alternate"></link><link href="http://rsegebre.com/feeds/Blog.atom.xml" rel="self"></link><id>http://rsegebre.com</id><updated>2012-06-11T00:00:00-04:00</updated><entry><title>Welcome!</title><link href="http://rsegebre.com/welcome.html" rel="alternate"></link><updated>2012-06-11T00:00:00-04:00</updated><author><name>Roberto Segebre</name></author><id>http://rsegebre.com/welcome.html</id><summary type="html">&lt;p&gt;So now that is summer and I just graduated, I realize I finally
+have enough time to get a website rolling. So I starting looking
+into what simple blog engine that allows for quite some modification
+and custom themes. So I came across &lt;a class="reference external" href="http://pelican.notmyidea.org"&gt;Pelican&lt;/a&gt; after going through some
+static blog generators, and coming across &lt;a class="reference external" href="http://pydanny.com"&gt;Pydanny&lt;/a&gt;'s Website, I decided
+on Pelican. Yeah if you click on pydanny's website you'll see that they basically
+look exactly the same. That is because I just followed his as a template
+and we are both using the same pelican theme. Also Pydanny's website contains
+a good article on all the different &lt;a class="reference external" href="http://pydanny.com/choosing-a-new-python-based-blog-engine.html"&gt;static blog generators&lt;/a&gt; and how to run your &lt;a class="reference external" href="http://pydanny.com/my-new-blog.html"&gt;own
+pelican website&lt;/a&gt; if you are interested!&lt;/p&gt;
+&lt;p&gt;After getting something decent going on in my own lil virtual box, I went to
+try and deploy it. Which I knew would be the most annoying phase, since you have to
+deal with various elements. Such as: your registrar, creating A records, waiting
+for DNS servers to update and countless hours googling ;). But it
+payed off, I will write a guide later on about how to roll your own Pelican website using github for free! (unless you want to have your own domain name)&lt;/p&gt;
+&lt;p&gt;Anyways my head is killing from staring at the screen(s) too long! So I am going to bed.&lt;/p&gt;
+&lt;p&gt;Cyaa!&lt;/p&gt;
+&lt;p&gt;~rs&lt;/p&gt;
+</summary><category term="blog"></category><category term="pydanny"></category><category term="pelican"></category><category term="website"></category></entry></feed>

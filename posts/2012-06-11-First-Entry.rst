@@ -3,7 +3,7 @@ Welcome!
 
 :date: 2012-6-11
 :tags: blog, pydanny, pelican, website
-:category: blog
+:category: Blog
 :author: Roberto Segebre
 
 So now that is summer and I just graduated, I realize I finally
