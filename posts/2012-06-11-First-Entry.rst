@@ -1,5 +1,5 @@
 Welcome!
-########################
+########
 
 :date: 2012-6-11
 :tags: blog, pydanny, pelican, website

@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u"Roberto Segebre"
+AUTHOR = u'Roberto Segebre'
 DISQUS_SITENAME = 'rsegebre'
-SITENAME = u'rsegebre'
+SITENAME = u"rsegebre"
 SITEURL = 'http://rsegebre.com'
 
 
-TIMEZONE = 'America/New_York'
+TIMEZONE = "America/New_York"
+LOCALE = ""
 
-
+FEED_RSS = 'feeds/all.rss.xml'
+CATEGORY_FEED_RSS = 'feed/%s.rss.xml'
 GITHUB_URL = 'http://github.com/rsegebre'
 DEFAULT_LANG='en'
 THEME = 'notmyidea'
@@ -28,7 +30,7 @@ SOCIAL = (
          )
 TWITTER_USERNAME = 'rss1989'
 
-DEFAULT_PAGINATION = 7
+DEFAULT_PAGINATION = 5
 
 
     

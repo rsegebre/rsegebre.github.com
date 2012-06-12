@@ -1,16 +1,16 @@
 About
 #####
 
-:date: 2012-06-11
+:date: 2012-06-11 11:01
 
-I graduate not so long ago on, May 2012, from Colgate University. My major
+I graduated not so long ago on, May 2012, from Colgate University. My major
 was Computer Science and I also minored in Economics. I am currently
 in the search for a full-time position as a Software Developer, but I am always
 open for any projects. So if you have any projects you need help, please let me know!
 
 
 Languages
-##########
+=========
 
 * Java
 * Python
@@ -18,7 +18,7 @@ Languages
 * and some Haskell
 
 Some Code
-##########
+=========
 I haven't worked/working on anything huge but you can still checkout some of the code I've worked on:
 * `Simple Database`_
 * `Baby Scheme`_
