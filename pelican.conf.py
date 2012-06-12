@@ -2,8 +2,10 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u"Roberto Segebre"
-SITENAME = u"rsegebre"
-SITEURL = 'http://rsegebre.github.com'
+DISQUS_SITENAME = 'rsegebre'
+SITENAME = u'rsegebre'
+SITEURL = 'http://rsegebre.com'
+
 
 TIMEZONE = 'America/New_York'
 
@@ -14,16 +16,17 @@ THEME = 'notmyidea'
 
 # Blogroll
 LINKS =  (
-    ('Pelican', 'http://docs.notmyidea.org/alexis/pelican/'),
-    ('Python.org', 'http://python.org'),
-    ('Jinja2', 'http://jinja.pocoo.org'),
+    ('Colgate COSC Dept. Website', 'http://cs.colgate.edu'),
     ('You can modify those links in your config file', '#')
          )
 
 # Social widget
 SOCIAL = (
-          ('You can add links in your config file', '#'),
+          ('twitter', 'http://twitter.com/rss1989'),
+	  ('github', 'http://github.com/rsegebre'),
+	  ('facebook', 'http://www.facebook.com/rsegebre'),
          )
+TWITTER_USERNAME = 'rss1989'
 
 DEFAULT_PAGINATION = 7
 
