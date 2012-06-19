@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>rsegebre</title><link href="http://rsegebre.com" rel="alternate"></link><link href="http://rsegebre.com/feeds/all-en.atom.xml" rel="self"></link><id>http://rsegebre.com</id><updated>2012-06-11T00:00:00-04:00</updated><entry><title>New Blog/Website</title><link href="http://rsegebre.com/new-blogwebsite.html" rel="alternate"></link><updated>2012-06-11T00:00:00-04:00</updated><author><name>Roberto Segebre</name></author><id>http://rsegebre.com/new-blogwebsite.html</id><summary type="html">&lt;p&gt;This is my first attemp to setup my new personal website/blog following pydanny's steps.&lt;/p&gt;
-</summary><category term="blog"></category></entry><entry><title>Welcome!</title><link href="http://rsegebre.com/welcome.html" rel="alternate"></link><updated>2012-06-11T00:00:00-04:00</updated><author><name>Roberto Segebre</name></author><id>http://rsegebre.com/welcome.html</id><summary type="html">&lt;p&gt;So now that is summer and I just graduated, I realize I finally
+&lt;div class="section" id="update"&gt;
+&lt;h2&gt;Update:&lt;/h2&gt;
+&lt;p&gt;2012-06-13&lt;/p&gt;
+&lt;p&gt;So after a couple of days of playing around I am finally getting used to this,
+also if you've never used &lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;ReST&lt;/a&gt; or &lt;a class="reference external" href="http://www.latex-project.org"&gt;Latex&lt;/a&gt;, it might be somewhat annoying.
+But the basics are not that hard to learn!&lt;/p&gt;
+&lt;/div&gt;
+</summary><category term="blog"></category><category term="pydanny"></category><category term="website"></category></entry><entry><title>Welcome!</title><link href="http://rsegebre.com/welcome.html" rel="alternate"></link><updated>2012-06-11T00:00:00-04:00</updated><author><name>Roberto Segebre</name></author><id>http://rsegebre.com/welcome.html</id><summary type="html">&lt;p&gt;So now that is summer and I just graduated, I realize I finally
 have enough time to get a website rolling. So I starting looking
 into what simple blog engine that allows for quite some modification
 and custom themes. So I came across &lt;a class="reference external" href="http://pelican.notmyidea.org"&gt;Pelican&lt;/a&gt; after going through some

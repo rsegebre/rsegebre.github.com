@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>rsegebre</title><link>http://rsegebre.com</link><description></description><atom:link href="http://rsegebre.com/feed/Blog.rss.xml" rel="self"></atom:link><lastBuildDate>Mon, 11 Jun 2012 00:00:00 -0400</lastBuildDate><item><title>New Blog/Website</title><link>http://rsegebre.com/new-blogwebsite.html</link><description>&lt;p&gt;This is my first attemp to setup my new personal website/blog following pydanny's steps.&lt;/p&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Roberto Segebre</dc:creator><pubDate>Mon, 11 Jun 2012 00:00:00 -0400</pubDate><guid>http://rsegebre.com/new-blogwebsite.html</guid><category>blog</category></item><item><title>Welcome!</title><link>http://rsegebre.com/welcome.html</link><description>&lt;p&gt;So now that is summer and I just graduated, I realize I finally
+&lt;div class="section" id="update"&gt;
+&lt;h2&gt;Update:&lt;/h2&gt;
+&lt;p&gt;2012-06-13&lt;/p&gt;
+&lt;p&gt;So after a couple of days of playing around I am finally getting used to this,
+also if you've never used &lt;a class="reference external" href="http://docutils.sourceforge.net/rst.html"&gt;ReST&lt;/a&gt; or &lt;a class="reference external" href="http://www.latex-project.org"&gt;Latex&lt;/a&gt;, it might be somewhat annoying.
+But the basics are not that hard to learn!&lt;/p&gt;
+&lt;/div&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Roberto Segebre</dc:creator><pubDate>Mon, 11 Jun 2012 00:00:00 -0400</pubDate><guid>http://rsegebre.com/new-blogwebsite.html</guid><category>blog</category><category>pydanny</category><category>website</category></item><item><title>Welcome!</title><link>http://rsegebre.com/welcome.html</link><description>&lt;p&gt;So now that is summer and I just graduated, I realize I finally
 have enough time to get a website rolling. So I starting looking
 into what simple blog engine that allows for quite some modification
 and custom themes. So I came across &lt;a class="reference external" href="http://pelican.notmyidea.org"&gt;Pelican&lt;/a&gt; after going through some
