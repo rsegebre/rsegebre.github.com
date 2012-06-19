@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>rsegebre</title><link>http://rsegebre.com</link><description></description><atom:link href="http://rsegebre.com/feed/Java,%20Blog.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 19 Jun 2012 00:00:00 -0400</lastBuildDate><item><title>Simple Database</title><link>http://rsegebre.com/simple-database.html</link><description>&lt;p&gt;So I have been working for some time in &lt;a class="reference external" href="http://www.thumbtack.com/challenges"&gt;problem #3&lt;/a&gt; from
+the &lt;a class="reference external" href="http://www.thumbtack.com/jobs"&gt;Thumbtack&lt;/a&gt; challenges.I think it is almost done and I also took this chance as an opportunity to try and learn about Java applets,
+so anybody can actually try out the simple database.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://rsegebre.com/static/simple_database/appletloader.html"&gt;Try out Simple Database here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can check the git repo for it along with some of the thoughts I had while coding &lt;a class="reference external" href="https://github.com/rsegebre/Simple_Database"&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Roberto Segebre</dc:creator><pubDate>Tue, 19 Jun 2012 00:00:00 -0400</pubDate><guid>http://rsegebre.com/simple-database.html</guid><category>blog</category><category>thumbtack</category><category>java</category></item></channel></rss>

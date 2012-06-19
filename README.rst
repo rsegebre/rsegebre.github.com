@@ -5,7 +5,7 @@ New Blog/Website
 :tags: blog, pydanny, website
 :category: Blog
 
-This is my first attemp to setup my new personal website/blog following pydanny's steps.
+This is my first attempt to setup my new personal website/blog following pydanny's steps.
 
 Update:
 =======
