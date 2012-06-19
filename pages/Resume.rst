@@ -86,5 +86,5 @@ Leadership Experience:
 .. _`Computer Science Club`: http://cs.colgate.edu/cs/highlights/
 .. _`Colgate International Community`: http://colgateinternational.blogspot.com
 .. _`Amnesty International`: http://colgate.collegiatelink.net/organization/amnesty
-.. _`Resume PDF Version`: pdfs/ROBERTO SEGEBRE RESUME.pdf
+.. _`Resume PDF Version`: pdfs/ROBERTO_SEGEBRE_RESUME.pdf
 
