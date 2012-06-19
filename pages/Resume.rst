@@ -84,7 +84,7 @@ Leadership Experience:
 .. _`GENI`: http://groups.geni.net/geni/wiki/MeasurementSystem
 .. _`TRIDENTCOM 2012`: http://www.tridentcom.org/2012/program
 .. _`Computer Science Club`: http://cs.colgate.edu/cs/highlights/
-.. _`Colgate International Community`: http://colgateinternational.blogspot.com>`_**, Colgate University
+.. _`Colgate International Community`: http://colgateinternational.blogspot.com
 .. _`Amnesty International`: http://colgate.collegiatelink.net/organization/amnesty
-.. _`Resume PDF Version`: pdfs/RSEGEBE_RESUME.pdf
+.. _`Resume PDF Version`: pdfs/ROBERTO SEGEBRE RESUME.pdf
 
