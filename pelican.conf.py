@@ -13,13 +13,14 @@ LOCALE = ""
 FEED_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feed/%s.rss.xml'
 GITHUB_URL = 'http://github.com/rsegebre'
+GOOGLE_ANALYTICS = 'UA-32786140-1'
 DEFAULT_LANG='en'
 THEME = 'notmyidea'
 
 # Blogroll
 LINKS =  (
     ('Colgate COSC Dept. Website', 'http://cs.colgate.edu'),
-    ('You can modify those links in your config file', '#')
+    ('Coding Horror Blog by Jeff Atwood', 'http://www.codinghorror.com/blog/')
          )
 
 # Social widget
