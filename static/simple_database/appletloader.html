@@ -1,12 +1,36 @@
-<html>
- <body>
-	<h1>Simple Database</h1>
-	<h3> Instructions:</h3>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<title> Simple Database</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../.././theme/css/main.css" type="text/css">
+ </head>
+ <body id="index" class="home">
+  <a href=http://github.com/rsegebre">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbon/forkme_right_red_aa0000.png" alt="fork me on github">
+  </a>
+  <header id="banner" class"body">
+   <h1><a href="../../.">rsegebre</a></h1>
+   <nav>
+    <ul>
+     <li><a href="../.././pages/about.html">About</a></li>
+     <li><a href="../.././pages/resume.html">Resume</a></li>
+     <li><a href="../.././category/Blog.html>Blog</a></li>
+     <li><a href="../.././category/Java.html>Java</a></li>
+    </ul>
+ </header>
+ <section id="content" class="body">
+  <article>
+   <header>	
+	<h1 class="entry-title">Simple Database</h1>
+   </header>
+   <div class="entry-content">
+	<h2> Instructions:</h2>
 	<p>Insert the desired commands and click on run for the commands to be executed.
 	   Every run is independent of the previous one so variables will not be stored across
 	   different runs.<br>
 
-	 Allowed commands are:</p>
+	<br> Allowed commands are:</p>
 	 <ul>
 	  <li>GET [variable_name] : returns value associated with [variable_name]</li>
 	  <li>SET [variable_name] [value] : stores [variable_name] with [value]</li>
@@ -16,10 +40,12 @@
 	  <li>COMMIT : makes current transactional block permanent</li>	
 	  <li>ROLLBACK : returns database to to previous transactional block</li>	
 	  <li>END : terminates database (eliminates all variables stored)</li>	
-	<br>
-	<applet code=Applet_Simple_Database.class width=500 height=300> 
+	<br><br><br>
+	<applet code=Applet_Simple_Database.class width=5250 height=300> 
 	Please enable this to run so you can try out the simple database applet.
 	</applet>
-
+   </div>
+  </article>
+ </section>
  </body>
 </html>
