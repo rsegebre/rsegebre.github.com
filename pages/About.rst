@@ -14,20 +14,23 @@ Languages
 
 * Java
 * Python
-* C
-* and some Haskell
+* C/C++
+* Some Haskell
 
-Some Code
-=========
+Some Code Samples:
+==================
 I haven't worked/working on anything huge but you can still checkout some of the code I've worked on:
 
-* `Simple Database`_
+* `Simple Database`_ (Try out the code through a `simple applet`_)
 * `Baby Scheme`_
 * Contributed on `Genigims`_
-* Many others, but I just need to get them on github ;)
+* `DNS Cache`_
+* Many others, but I just need to get them on github.
 
 
 .. _`Simple Database`: http://github.com/rsegebre/Simple_Database
+.. _`simple applet`: http://rsegebre.com/static/simple_database/appletloader.html
+.. _`DNS Cache`: http://github.com/rsegebre/dns_cache
 .. _`Baby Scheme`: http://github.com/rsegebre/baby-scheme
 .. _`Genigims`: http://github.com/rsegebre/genigims
 

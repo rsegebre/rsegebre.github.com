@@ -12,12 +12,14 @@ Education & Honors:
 | `James G. Brooks '32 Scholarship Recipient`_ Spring 2010-12
 | `Juan Atala M. Scholarship Recipient`_ Fall 2008
 | Member of Upsilon, Pi, Epsilon Honor Society for Computer Science Spring 2012
-
+|
 
 Technological Skills & Programming Languages:
 =============================================
+
 | Proficient in Java, Python and C
 | Familiar with C++, Haskell, JavaScript, Django, SQL, GitHub, MIPS Assembly, Eclipse and Linux
+|
 
 Working Experience:
 ===================

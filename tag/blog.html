@@ -55,8 +55,204 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href=".././simple-database.html">Simple Database</a></h1> 
+                    <h1 class="entry-title"><a href=".././setting-up-your-github-website.html">Setting up your github website</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2012-06-22T00:00:00">
+                Fri 22 June 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/Roberto Segebre.html">Roberto Segebre</a>
+        </address>
+        
+<p>In <a href=".././category/Blog.html">Blog</a>. </p>
+<p>tags: <a href=".././tag/blog.html">blog</a><a href=".././tag/website.html">website</a><a href=".././tag/pelican.html">pelican</a><a href=".././tag/python.html">python</a><a href=".././tag/github.html">github</a></p>
+
+
+</footer><!-- /.post-info --><p>I said in my first post that I was going to post a guide on how to set-up your own website using <a class="reference external" href="http://pelican.notmyidea.org/en/latest/">pelican</a> and <a class="reference external" href="http://www.github.com">github</a> from a Linux environment.</p>
+<div class="section" id="environment">
+<h2>Environment:</h2>
+<p>So if you are not already running Linux in your laptop, then you have some options:</p>
+<ol class="arabic simple">
+<li>Install Linux on a virtual machine:</li>
+</ol>
+<blockquote>
+<ul class="simple">
+<li>I recommend using <a class="reference external" href="https://www.virtualbox.org/">VirtualBox</a>, it is a free and simple to use. Simply <a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">download</a> the respective package for your current OS and install it, very simply click and install process. But if you have any issues leave a comment below or just refer to the <a class="reference external" href="https://www.virtualbox.org/manual/ch02.html#installation_windows">installation documentation</a>.</li>
+<li>After you install VirtualBox you can download any version of Linux:</li>
+</ul>
+<blockquote>
+<ul class="simple">
+<li>For users that are not used to the Linux shell simply download the <a class="reference external" href="http://www.ubuntu.com/download/desktop">desktop version</a> of Ubuntu, one of the various flavors of Linux.</li>
+<li>For more advanced users you can download the <a class="reference external" href="http://www.ubuntu.com/download/server">server version</a> of Ubuntu. It doesn't have a GUI or any of the extra graphic packages that come with the desktop version.</li>
+</ul>
+</blockquote>
+<ul class="simple">
+<li>After downloading the version of Ubuntu that you want to use, proceed to starting your VirtualBox software and simply clicking on the <em>new</em> button in order to create a new virtual machine.</li>
+</ul>
+<blockquote>
+<ul class="simple">
+<li>Then simply follow the steps indicated by the VirtualBox Wizard. You give your machine any name, but for operating system you must choose Linux and then the corresponding version of Ubuntu (32 bit or 64 bit, whichever you downloaded).</li>
+<li>If you are only going to use this virtual machine for publishing to your website, then I recommend using 512 MB of RAM and a new hard disk of 4 GB using VDI, Dynamically allocated. Pretty much the default settings.</li>
+</ul>
+</blockquote>
+<ul class="simple">
+<li>Then after we finish creating the new virtual machine you can simply select it and click on start, to power up the machine. When you do so a new wizard will show up asking you to select an image. In here you have to select the version of Ubuntu you downloaded and hit next. Then simply follow the installation procedure for Ubuntu which should take about 5-10 min. You can leave the default setting on pretty much anything. (If you have issues installing Ubuntu on your Virtual Machine leave a comment or refer to the <a class="reference external" href="https://help.ubuntu.com/12.04/installation-guide/i386/d-i-intro.html">documentation here</a>.)</li>
+<li>So after you are done installing Ubuntu fire up the almighty Linux shell and you are ready to move on the next part.</li>
+</ul>
+</blockquote>
+<ol class="arabic simple" start="2">
+<li>Install Linux in your laptop:</li>
+</ol>
+<blockquote>
+<ul class="simple">
+<li>I will not go over all the details, since this can be a more gruesome process or in some cases simpler! Regardless of which path you choose to follow try to refer to the official documentation first.</li>
+</ul>
+<blockquote>
+<ul class="simple">
+<li>Click on your current OS: { <a class="reference external" href="https://help.ubuntu.com/community/Installation">Windows</a> | <a class="reference external" href="http://www.ubuntu.com/download/help/create-a-usb-stick-on-mac-osx">Mac OS</a> }</li>
+</ul>
+</blockquote>
+</blockquote>
+</div>
+<div class="section" id="installing-pelican">
+<h2>Installing Pelican:</h2>
+<p>Kudos if you made it here, or even if you simply scrolled down here. Believe me, installing Pelican is as straightforward as it gets. Once you are inside your beloved Linux shell simply type:</p>
+<pre class="literal-block">
+$ sudo pip install pelican
+</pre>
+<p>But don't worry if the above didn't work. If the above statement threw some sort of error, then you need to check a couple of things first:</p>
+<ul>
+<li><p class="first">Is Python 2.7 installed? Run the following command to find out:</p>
+<pre class="literal-block">
+$ python -V
+</pre>
+<p>and you should get:</p>
+<pre class="literal-block">
+$ Python 2.7.3
+</pre>
+</li>
+<li><p class="first">If you get command not found or other error message it means you probably do not have python installed so you can install by running the following command:</p>
+<pre class="literal-block">
+$ apt-get install python
+</pre>
+</li>
+<li><p class="first">Now we have to install <a class="reference external" href="http://www.pip-installer.org/en/latest/installing.html#">pip</a> to make our lives a little better. To do this run the following commands:</p>
+<pre class="literal-block">
+$ wget http://pypi.python.org/packages/source/p/pip/pip-1.0.tar.gz
+$ tar xvfz pip-1.0.tar.gz
+$ cd pip-1.0/
+$ python setup.py install
+</pre>
+</li>
+<li><p class="first">If you have any other version of python installed then you have to install the python package <a class="reference external" href="http://pypi.python.org/pypi/argparse/">argparse</a>, which you can install by running the command:</p>
+<pre class="literal-block">
+$ pip install argparse
+</pre>
+</li>
+<li><p class="first">Without further ado we shall <a class="reference external" href="http://pelican.notmyidea.org/en/latest/getting_started.html">install pelican</a>:</p>
+<pre class="literal-block">
+$ pip install pelican
+</pre>
+<p>Done installing stuff... kind of.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="github-and-pelican-free-hosting">
+<h2>Github and Pelican (free hosting) :</h2>
+<p>So I won't go into much detail on what is <a class="reference external" href="http://www.github.com">github</a>  and how to completely use it since there is plenty of documentation in their site. I will simply tell you guys the basics you need. So you should take some time right now to register an account with them. But just before you leave three words: <a class="reference external" href="http://en.wikipedia.org/wiki/Distributed_revision_control">distributed revision control!</a> So when you come back use the following commands in order to install <a class="reference external" href="http://www.github.com">github</a>:</p>
+<pre class="literal-block">
+$ apt-get install git-core
+</pre>
+<p>Then follow <a class="reference external" href="https://help.github.com/articles/set-up-git">this</a> little tutorial on how to perform the initial configuration on <a class="reference external" href="http://www.github.com">github</a>. Once you are done you can finally get started on your website:</p>
+<ol class="arabic">
+<li><p class="first"><a class="reference external" href="https://help.github.com/articles/create-a-repo">Create a new repository</a> on github's website. You should name it <em>website.github.com</em>.</p>
+</li>
+<li><p class="first">Go back to your linux shell and create a new directory with the same name, <em>website.github.com</em>. (Basically following the create a new repository guide linked above.) Or after you create your repository on the website write the following commands:</p>
+<pre class="literal-block">
+$ mkdir website.github.com
+$ cd website.github.com
+$ git init #initialize repository
+$ touch README.rst
+$ nano README.rst #Or your favorite text editor (ie gedit, vi, etc)
+$ #add some content in your README.rst file (ie &quot;this is a website&quot; )
+$ git add . #add everything in the current folder
+$ git commit -m &quot;first commit&quot; #local commit
+$ git remote add origin https://github.com/username/website.github.com.git
+$ git push origin master #uploads to the link above.
+</pre>
+</li>
+</ol>
+<blockquote>
+Ok, so you now are one step closer to becoming famous.</blockquote>
+</div>
+<div class="section" id="quickstart-your-blog">
+<h2>Quickstart your blog:</h2>
+<blockquote>
+<p>Now that you have everything set-up properly and you are in your <em>website.github.com</em> folder in your linux shell, you can start using pelican. You can simply do:</p>
+<pre class="literal-block">
+$ pelican-quickstart
+</pre>
+<p>Sit down and robotically answer the questions! This will generate your configuration file in the current folder. After you are done answering the questions you can simply run the following commands to generate your website and upload it:</p>
+<pre class="literal-block">
+$ pelican . -o . -s pelican.conf.py  #this generates the website using your settings
+$ git add .
+$ git commit -m &quot;I just generate my website!&quot;
+$ git push
+</pre>
+<p>So we are done. It may take some time but you can simply just go to website.github.com from your browser and your website should be up and running!</p>
+</blockquote>
+</div>
+<div class="section" id="organizing-your-posts">
+<h2>Organizing your posts:</h2>
+<p>You can look at the structure of <a class="reference external" href="https://github.com/rsegebre/rsegebre.github.com">my website</a>. I simply used three folders, one for my posts, pages and static content. You can add a new post by simply doing:</p>
+<pre class="literal-block">
+$ touch post1.rst
+$ nano post1.rst
+</pre>
+<p>and write something like:</p>
+<pre class="literal-block">
+Title to display on post:
+=========================
+
+:date: 2012-06-22
+:author: Roberto Segebre
+:tags: blog, pelican, github, etc
+:category: blog
+
+This is a post on how to suceed in life... Blah blah..
+</pre>
+<p>Save it and run the last four commands in the section above (pelican, add, commit, push), you can do this every time you do a change to your website and it should get updated in a couple minutes. A very cool <a class="reference external" href="http://rst.ninjs.org/">WYSIWYG text editor</a> for Restructured Text files (.rst files) is the one I am currently using to write this post. It is pretty sweet and you can also download the source code and simply run it on a local server, so you don't really need internet to write yours posts. The other markup language you can use is markdown (.md files) and there is also a really cool text editor for windows made by the <a class="reference external" href="http://code52.org/">code52</a> open source community, it is called <a class="reference external" href="http://code52.org/DownmarkerWPF/">markpad</a>.</p>
+<p>So with this I conclude the post. I will have another post later on on how to change your domain name on your <a class="reference external" href="http://pages.github.com/">github page</a>. (But you will have to spend some money on your domain name.) Note that all of this can be done free of charge, you don't need to pay for hosting or anything like that, and you get a lot of flexibility in terms of you can do with it, like embedding an <a class="reference external" href="http://pages.github.com/">applet</a>!</p>
+<p>I hope you were able to follow through this long and painful guide! Remember parts of this guide have lots of resources, I just wanted to have a guide that takes you from scratch to an end-product. If you any questions or comments please post below.</p>
+<p>~rs</p>
+</div>
+<p>There are <a href=".././setting-up-your-github-website.html#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                        <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+        
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                        <h1><a href=".././simple-database.html" rel="bookmark" title="Permalink to Simple Database">Simple Database</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2012-06-19T00:00:00">
                 Tue 19 June 2012
         </abbr>
@@ -70,22 +266,15 @@
 <p>tags: <a href=".././tag/blog.html">blog</a><a href=".././tag/thumbtack.html">thumbtack</a><a href=".././tag/java.html">java</a></p>
 
 
-</footer><!-- /.post-info --><p>So I have been working for some time in <a class="reference external" href="http://www.thumbtack.com/challenges">problem #3</a> from
+</footer><!-- /.post-info -->
+                <p>So I have been working for some time in <a class="reference external" href="http://www.thumbtack.com/challenges">problem #3</a> from
 the <a class="reference external" href="http://www.thumbtack.com/jobs">Thumbtack</a> challenges.I think it is almost done and I also took this chance as an opportunity to try and learn about Java applets,
 so anybody can actually try out the simple database.</p>
-<p><a class="reference external" href="http://rsegebre.com/static/simple_database/appletloader.html">Try out Simple Database here!</a></p>
-<p>You can check the git repo for it along with some of the thoughts I had while coding <a class="reference external" href="https://github.com/rsegebre/Simple_Database">here</a>.</p>
-<p>There are <a href=".././simple-database.html#disqus_thread">comments</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                        <ol id="posts-list" class="hfeed">
-            
-        
+<p><a class="reference external" href="http://rsegebre.com/static/simple_database/appletloader.html">Try out Simple Database ...</a></p>
+                <a class="readmore" href=".././simple-database.html">read more</a>
+                <p>There are <a href=".././simple-database.html#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
         
