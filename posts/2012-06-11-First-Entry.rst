@@ -21,12 +21,9 @@ pelican website`_ if you are interested!
 After getting something decent going on in my own lil virtual box, I went to 
 try and deploy it. Which I knew would be the most annoying phase, since you have to
 deal with various elements. Such as: your registrar, creating A records, waiting
-for DNS servers to update and countless hours googling ;). But it
+for DNS servers to update and countless hours googling. But it
 payed off, I will write a guide later on about how to roll your own Pelican website using github for free! (unless you want to have your own domain name)
 
-Anyways my head is killing from staring at the screen(s) too long! So I am going to bed.
-
-Cyaa!
 
 ~rs
 
