@@ -3,6 +3,9 @@ Resume
 
 :date: 2012-06-12
 
+`Resume PDF Version`_ and `Coursework PDF Version`_
+
+
 Education & Honors:
 ===================
 
@@ -78,8 +81,42 @@ Leadership Experience:
 - Participate/Organize Colgate's Amnesty International Participation on the 2009 and 2012 General Assembly
 
 
-`Resume PDF Version`_
-=====================
+Computer Science and Economics Coursework:
+==========================================
+
+COSC Courses:
+
+- COSC 101 Intro to Computing I
+- COSC 101L Intro to Computing I Lab
+- FSEM 142 Technology-Electronic Commerce
+- COSC 102 Intro to Computing II
+- COSC 102L Intro to Computing II Lab
+- COSC 201 Computer Organization
+- COSC 201L Computer Organization Lab
+- COSC 290 Discrete Structures
+- COSC 290L Discrete Structures Lab
+- COSC 303 Principles of Design-Large Systems
+- COSC 303L Principles of Design-Large Systems Lab
+- COSC 304 Theory of Computing
+- COSC 304 Theory of Computing Lab
+- COSC 455 Distributed Web Apps / Cardiff University
+- COSC 491 Database Systems / Cardiff University
+- COSC 491L Database Systems Lab / Cardiff University
+- COSC 480 Topics: Economic Reasoning / Computational Design
+- COSC 465 Computer Networks
+- COSC 465L Computer Networks Lab
+- COSC 302 Algorithms 
+- COSC 302L Algorithms Lab
+
+Economics related Courses:
+
+- ECON 151 Introduction to Economics
+- ECON 252 Intermediate Macroeconomics
+- ECON 251 Intermediate Microeconomics
+- ECON 219 Chinese Economy
+- ECON 348 Health Economics
+- GEOG 313 East Asia: Comparative Economic Geography
+
 
 .. _`James G. Brooks '32 Scholarship Recipient`: http://www.colgatealumni.org/s/801/images/editor_documents/Endowments%202009-2010.pdf
 .. _`Juan Atala M. Scholarship Recipient`: http://old.latribuna.hn/2008/05/23/post10034485
@@ -89,4 +126,5 @@ Leadership Experience:
 .. _`Colgate International Community`: http://colgateinternational.blogspot.com
 .. _`Amnesty International`: http://colgate.collegiatelink.net/organization/amnesty
 .. _`Resume PDF Version`: https://github.com/rsegebre/rsegebre.github.com/raw/master/static/pdfs/ROBERTO_SEGEBRE_RESUME.pdf
-
+.. _`Coursework PDF Version`: https://github.com/rsegebre/rsegebre.github.com/raw/master/static/pdfs/ROBERTO_SEGEBRE_COURSEWORK.pdf
+ 
