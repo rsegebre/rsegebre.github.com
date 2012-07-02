@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="" href="">
+    <information>
+        <title>Simple Database</title>
+        <vendor>Roberto Segebre</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.6+"
+            href="http://java.sun.com/products/autodl/j2se" />
+        <jar href="simple_database.jar" main="true" />
+
+    </resources>
+    <applet-desc 
+         name="Simple Database Applet"
+         main-class="Applet_Simple_Database.class"
+         width="525"
+         height="300">
+     </applet-desc>
+     <update check="background"/>
+</jnlp> 

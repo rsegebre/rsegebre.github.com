@@ -28,6 +28,7 @@ SOCIAL = (
           ('twitter', 'http://twitter.com/rss1989'),
 	  ('github', 'http://github.com/rsegebre'),
 	  ('facebook', 'http://www.facebook.com/rsegebre'),
+	  ('linkedIn', 'http://www.linkedin.com/pub/roberto-segebre/40/8b1/6b2'),
          )
 TWITTER_USERNAME = 'rss1989'
 

@@ -3,8 +3,7 @@ About
 
 :date: 2012-06-11 11:01
 
-Welcome to the online home of Roberto Segebre, abbreviated by rsegebre! 
-In this website you can learn about my coding and technology related interests
+Welcome to the online home of Roberto Segebre! In this website you can learn about my coding and technology related interests
 as well as about me. If you are interested in connecting with me, you can find links at the bottom
 of the page to the various social networking websites. 
 
@@ -13,8 +12,10 @@ I am a recent graduate of Colgate University in Hamilton, NY, US. My major at Co
 was Computer Science and I also minored in Economics, but I still had the opportunity
 to take plenty of classes in various other disciplines such as Japanese, Political Science and many others. I am currently
 in the search for a full-time position as a systems administrator or software developer. I do not have a lot of practical experience at either,
-but I have several skills that would make the adaptation process fast and easy. I am always
-open for any projects (programming or IT related), so if you have any projects you need help with, contact me and I would gladly collaborate!
+but I have several skills that would make the adaptation process fast and easy. I am also looking into teaching English/Spanish/COSC positions in Korea or Japan, I know it seems random but I've always wanted to teach abroad and I think that now is one of the best times to do so. So currently I am applying 
+for various Computer Science related jobs and at the same time applying for teaching positions in Korea or Japan, waiting to see which path works out. I am always
+open for any projects (programming or IT related), so if you have any projects you need help with, contact me and I would gladly collaborate.
+
 
 
 Languages
