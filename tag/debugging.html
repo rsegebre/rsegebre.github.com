@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>About</title>
+        <title>rsegebre - debugging</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href=".././theme/css/main.css" type="text/css" />
         <link href=".././feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="rsegebre ATOM Feed" />
@@ -48,42 +48,54 @@
                 </ul></nav>
         </header><!-- /#banner -->
                 
-<section id="content" class="body">    
-    <h1 class="entry-title">About</h1>
-    
-    <p>Welcome to the online home of Roberto Segebre! In this website you can learn about my coding and technology related interests
-as well as about me. If you are interested in connecting with me, you can find links at the bottom
-of the page to the various social networking websites.</p>
-<p>I am a recent graduate of Colgate University in Hamilton, NY, US. My major at Colgate
-was Computer Science and I also minored in Economics, but I still had the opportunity
-to take plenty of classes in various other disciplines such as Japanese, Political Science and many others. I am currently
-in the search for a full-time position as a systems administrator or software developer. I do not have a lot of practical experience at either,
-but I have several skills that would make the adaptation process fast and easy. I am also looking into teaching English/Spanish/COSC positions in Korea or Japan, I know it seems random but I've always wanted to teach abroad and I think that now is one of the best times to do so. So currently I am applying
-for various Computer Science related jobs and at the same time applying for teaching positions in Korea or Japan, waiting to see which path works out. I am always
-open for any projects (programming or IT related), so if you have any projects you need help with, contact me and I would gladly collaborate.</p>
-<div class="section" id="languages">
-<h2>Languages</h2>
-<ul class="simple">
-<li>Java</li>
-<li>Python</li>
-<li>C/C++</li>
-<li>Some Haskell</li>
-</ul>
-</div>
-<div class="section" id="code-samples">
-<h2>Code Samples:</h2>
-<p>Here are a couple of projects I've worked on ranging from class projects to research related. The code is hosted in github so click on the links to access the code:</p>
-<ul class="simple">
-<li><a class="reference external" href="http://github.com/rsegebre/Simple_Database">Simple Database</a> (Try out the code through a <a class="reference external" href="http://rsegebre.com/static/simple_database/appletloader.html">simple applet</a>)</li>
-<li><a class="reference external" href="http://github.com/rsegebre/baby-scheme">Baby Scheme</a></li>
-<li>Contributed on <a class="reference external" href="http://github.com/rsegebre/genigims">GENIGIMS</a> (Also co-authored a <a class="reference external" href="http://www.cs.bu.edu/faculty/crovella/paper-archive/tridentcom-passive-msmt-sys.pdf">research paper</a> on GENI)</li>
-<li><a class="reference external" href="http://github.com/rsegebre/dns_cache">DNS Cache</a></li>
-<li><a class="reference external" href="http://rsegebre.com/static/sample_website">Deviruchi Website</a></li>
-<li>Many others, but I just need to get them on github.</li>
-</ul>
-</div>
 
-</section>
+            
+
+        
+        
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href=".././debugging-thru-life.html">Debugging thru life</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2012-07-14T00:00:00">
+                Sat 14 July 2012
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href=".././author/Roberto Segebre.html">Roberto Segebre</a>
+        </address>
+        
+<p>In <a href=".././category/Blog.html">Blog</a>. </p>
+<p>tags: <a href=".././tag/blog.html">blog</a><a href=".././tag/debugging.html">debugging</a></p>
+
+
+</footer><!-- /.post-info --><p>Interesting quote from Dijkstra (ring a bell?):</p>
+<p>&quot;If debugging is the process of removing bugs, then programming must be the process of putting them in.&quot;
+Edsger Dijkstra</p>
+<p>I was listening to a podcast about <a class="reference external" href="http://www.thisdeveloperslife.com/post/1-0-3-problems">problem solving</a> in relation to programming and related to various aspects in life. At some point during the podcast I asked myself, &quot;How do I debug? What is the thought process (if any) when I encounter a bug.&quot;</p>
+<p>This made me realize that, sadly enough, I never had a systematic way of approaching a bug. This seemed a terrible realization at first, but later I proceeded to rationalize this finding. Most of the projects I've worked, are small enough that debugging is trivial to some extent. Running my code against test cases seemed foolish, especially when the entire program is about 300 lines or so in most projects in college. Short programs along with one of the first things I learned about programming, to test your code as you go. This means that I am used to writing code that can be executed at any time along with some sort of documentation during the process. (1) Small programs and (2) testing as you go has reduced the need of developing better debugging skills in my four years programming.</p>
+<p>But as a lab tutor for some computer science courses I've had to look at other peoples code and the worst mistakes I've seen are to write all your code without ever running any of it, then debugging it all at once. Two reasons I would never recommend this are: (1) Initial bugs can be very costly later on in your code and make the rest of your code useless once initial bugs are fixed. (2) It is harder to debug all your code at once. Think about it, you just finished implementing a tricky algorithm, about 300 to 400 lines of code, it took you a good 3 hours of coding plus a couple more figuring out the algorithm, the deadline is coming soon. The last thing you would want to do is spend twice that time debugging your code. This scenario might be unrealistic for many of you, but it is probably true for most college students.</p>
+<p>So what would be a good debugging process for college-type programming assignments? I would say that a good bug-avoiding-style / defensive programming style, this means that you should (1) think of the layout or algorithm you are going use, write some pseudocode or draw a diagram anything that helps you organize your thoughts on how to solve the current problem at hand. Programming without thinking is one of the biggest mistakes that will probably yield an incorrect program or if it works a lot of bugs. (2) Test your code in small portions, gradual and incremental debugging. This means that for example, for every 30 minutes of coding you do take other 30 minutes debugging, or some time scheme that helps reminds you to debug constantly and not procrastinate. Also after you've tried fixing a bug and you know the program logic isn't incorrect, you can always ask for support in <a class="reference external" href="http://stackoverflow.com/">stack overflow</a>, it is very likely that your question (or similar) has already been asked/answered.</p>
+<p>There are <a href=".././debugging-thru-life.html#disqus_thread">comments</a>.</p>
+                </article>
+                
+                    
+<p class="paginator">
+    
+    Page 1 / 1
+    
+</p>
+
+                
+            </aside><!-- /#featured -->
+            
+        
+        
+        
+
+    
+
 
         <section id="extras" class="body">
         

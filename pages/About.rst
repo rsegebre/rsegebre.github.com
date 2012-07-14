@@ -34,6 +34,7 @@ Here are a couple of projects I've worked on ranging from class projects to rese
 * `Baby Scheme`_
 * Contributed on `GENIGIMS`_ (Also co-authored a `research paper`_ on GENI)
 * `DNS Cache`_
+* `Deviruchi Website`_
 * Many others, but I just need to get them on github.
 
 
@@ -43,4 +44,5 @@ Here are a couple of projects I've worked on ranging from class projects to rese
 .. _`DNS Cache`: http://github.com/rsegebre/dns_cache
 .. _`Baby Scheme`: http://github.com/rsegebre/baby-scheme
 .. _`GENIGIMS`: http://github.com/rsegebre/genigims
+.. _`Deviruchi Website`: http://rsegebre.com/static/sample_website
 
