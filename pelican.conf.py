@@ -13,6 +13,7 @@ LOCALE = ""
 FEED_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feed/%s.rss.xml'
 GITHUB_URL = 'http://github.com/rsegebre'
+GITHUB_ACTIVITY_FEED = 'https://github.com/rsegebre.atom'
 GOOGLE_ANALYTICS = 'UA-32786140-1'
 DEFAULT_LANG='en'
 THEME = 'notmyidea'
@@ -20,7 +21,8 @@ THEME = 'notmyidea'
 # Blogroll
 LINKS =  (
     ('Colgate COSC Dept. Website', 'http://cs.colgate.edu'),
-    ('Coding Horror Blog by Jeff Atwood', 'http://www.codinghorror.com/blog/')
+    ('Coding Horror Blog by Jeff Atwood', 'http://www.codinghorror.com/blog/'),
+    ('This Developer\'s Life', 'http://www.thisdeveloperslife.com')
          )
 
 # Social widget
