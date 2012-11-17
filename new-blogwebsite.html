@@ -4,9 +4,11 @@
         <title>New Blog/Website</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
-        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="rsegebre ATOM Feed" />
         
-        <link href="./feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="rsegebre RSS Feed" />
+        <link href="http://rsegebre.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="rsegebre Atom Feed" />
+        
+        
+        <link href="http://rsegebre.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="rsegebre RSS Feed" />
         
 
         <!--[if IE]>
@@ -41,36 +43,41 @@
                 
                 
                 
-                    <li class="active"><a href="./category/Blog.html">Blog</a></li>
+                    <li class="active"><a href="./category/blog.html">Blog</a></li>
                 
-                    <li ><a href="./category/Java.html">Java</a></li>
+                    <li ><a href="./category/java.html">Java</a></li>
                 
                 </ul></nav>
         </header><!-- /#banner -->
-                
-<section id="content" class="body">    
-<article>
-        <header> <h1 class="entry-title"><a href=""
-        rel="bookmark" title="Permalink to New Blog/Website">New Blog/Website</a></h1> 
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="new-blogwebsite.html" rel="bookmark"
+           title="Permalink to New Blog/Website">New Blog/Website</a></h1>
+      
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="rss1989">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
- </header>
-        <div class="entry-content">
-        <footer class="post-info">
+
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
         <abbr class="published" title="2012-06-11T00:00:00">
                 Mon 11 June 2012
         </abbr>
 
         
         <address class="vcard author">
-                By <a class="url fn" href="./author/Roberto Segebre.html">Roberto Segebre</a>
+                By <a class="url fn" href="./author/roberto-segebre.html">Roberto Segebre</a>
         </address>
         
-<p>In <a href="./category/Blog.html">Blog</a>. </p>
+<p>In <a href="./category/blog.html">Blog</a>. </p>
 <p>tags: <a href="./tag/blog.html">blog</a><a href="./tag/pydanny.html">pydanny</a><a href="./tag/website.html">website</a></p>
 
 
 </footer><!-- /.post-info -->
-        <p>This is my first attempt to setup my new personal website/blog following pydanny's steps.</p>
+      <p>This is my first attempt to setup my new personal website/blog following pydanny's steps.</p>
 <div class="section" id="update">
 <h2>Update:</h2>
 <p>2012-06-13</p>
@@ -79,23 +86,23 @@ also if you've never used <a class="reference external" href="http://docutils.so
 But the basics are not that hard to learn!</p>
 </div>
 
-        </div><!-- /.entry-content -->
-        
-        <div class="comments">
-        <h2>Comments !</h2>
-            <div id="disqus_thread"></div>
-            <script type="text/javascript">
-               var disqus_identifier = "new-blogwebsite.html";
-               (function() {
-               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-               dsq.src = 'http://rsegebre.disqus.com/embed.js';
-               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-            </script>
-        </div>
-        
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "new-blogwebsite.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://rsegebre.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
 
-</article>
+  </article>
 </section>
 
         <section id="extras" class="body">
@@ -117,9 +124,9 @@ But the basics are not that hard to learn!</p>
                 <div class="social">
                         <h2>social</h2>
                         <ul>
-                            <li><a href="./feeds/all.atom.xml" rel="alternate">atom feed</a></li>
+                            <li><a href="http://rsegebre.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
                             
-                            <li><a href="./feeds/all.rss.xml" rel="alternate">rss feed</a></li>
+                            <li><a href="http://rsegebre.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
                             
 
                         
@@ -138,7 +145,7 @@ But the basics are not that hard to learn!</p>
 
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>, which takes great advantages of <a href="http://python.org">python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
 
                 <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
@@ -146,14 +153,15 @@ But the basics are not that hard to learn!</p>
 
 
     <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32786140-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
     </script>
-    <script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-32786140-1");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
 
 
 

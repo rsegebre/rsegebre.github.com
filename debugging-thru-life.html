@@ -4,9 +4,11 @@
         <title>Debugging thru life</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
-        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="rsegebre ATOM Feed" />
         
-        <link href="./feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="rsegebre RSS Feed" />
+        <link href="http://rsegebre.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="rsegebre Atom Feed" />
+        
+        
+        <link href="http://rsegebre.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="rsegebre RSS Feed" />
         
 
         <!--[if IE]>
@@ -41,36 +43,41 @@
                 
                 
                 
-                    <li class="active"><a href="./category/Blog.html">Blog</a></li>
+                    <li class="active"><a href="./category/blog.html">Blog</a></li>
                 
-                    <li ><a href="./category/Java.html">Java</a></li>
+                    <li ><a href="./category/java.html">Java</a></li>
                 
                 </ul></nav>
         </header><!-- /#banner -->
-                
-<section id="content" class="body">    
-<article>
-        <header> <h1 class="entry-title"><a href=""
-        rel="bookmark" title="Permalink to Debugging thru life">Debugging thru life</a></h1> 
+        
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="debugging-thru-life.html" rel="bookmark"
+           title="Permalink to Debugging thru life">Debugging thru life</a></h1>
+      
 <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="rss1989">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
- </header>
-        <div class="entry-content">
-        <footer class="post-info">
+
+    </header>
+
+    <div class="entry-content">
+      <footer class="post-info">
         <abbr class="published" title="2012-07-14T00:00:00">
                 Sat 14 July 2012
         </abbr>
 
         
         <address class="vcard author">
-                By <a class="url fn" href="./author/Roberto Segebre.html">Roberto Segebre</a>
+                By <a class="url fn" href="./author/roberto-segebre.html">Roberto Segebre</a>
         </address>
         
-<p>In <a href="./category/Blog.html">Blog</a>. </p>
+<p>In <a href="./category/blog.html">Blog</a>. </p>
 <p>tags: <a href="./tag/blog.html">blog</a><a href="./tag/debugging.html">debugging</a></p>
 
 
 </footer><!-- /.post-info -->
-        <p>Interesting quote from Dijkstra (ring a bell?):</p>
+      <p>Interesting quote from Dijkstra (ring a bell?):</p>
 <p>&quot;If debugging is the process of removing bugs, then programming must be the process of putting them in.&quot;
 Edsger Dijkstra</p>
 <p>I was listening to a podcast about <a class="reference external" href="http://www.thisdeveloperslife.com/post/1-0-3-problems">problem solving</a> in relation to programming and related to various aspects in life. At some point during the podcast I asked myself, &quot;How do I debug? What is the thought process (if any) when I encounter a bug.&quot;</p>
@@ -78,23 +85,23 @@ Edsger Dijkstra</p>
 <p>But as a lab tutor for some computer science courses I've had to look at other peoples code and the worst mistakes I've seen are to write all your code without ever running any of it, then debugging it all at once. Two reasons I would never recommend this are: (1) Initial bugs can be very costly later on in your code and make the rest of your code useless once initial bugs are fixed. (2) It is harder to debug all your code at once. Think about it, you just finished implementing a tricky algorithm, about 300 to 400 lines of code, it took you a good 3 hours of coding plus a couple more figuring out the algorithm, the deadline is coming soon. The last thing you would want to do is spend twice that time debugging your code. This scenario might be unrealistic for many of you, but it is probably true for most college students.</p>
 <p>So what would be a good debugging process for college-type programming assignments? I would say that a good bug-avoiding-style / defensive programming style, this means that you should (1) think of the layout or algorithm you are going use, write some pseudocode or draw a diagram anything that helps you organize your thoughts on how to solve the current problem at hand. Programming without thinking is one of the biggest mistakes that will probably yield an incorrect program or if it works a lot of bugs. (2) Test your code in small portions, gradual and incremental debugging. This means that for example, for every 30 minutes of coding you do take other 30 minutes debugging, or some time scheme that helps reminds you to debug constantly and not procrastinate. Also after you've tried fixing a bug and you know the program logic isn't incorrect, you can always ask for support in <a class="reference external" href="http://stackoverflow.com/">stack overflow</a>, it is very likely that your question (or similar) has already been asked/answered.</p>
 
-        </div><!-- /.entry-content -->
-        
-        <div class="comments">
-        <h2>Comments !</h2>
-            <div id="disqus_thread"></div>
-            <script type="text/javascript">
-               var disqus_identifier = "debugging-thru-life.html";
-               (function() {
-               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-               dsq.src = 'http://rsegebre.disqus.com/embed.js';
-               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-              })();
-            </script>
-        </div>
-        
+    </div><!-- /.entry-content -->
+    
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "debugging-thru-life.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://rsegebre.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
+    
 
-</article>
+  </article>
 </section>
 
         <section id="extras" class="body">
@@ -116,9 +123,9 @@ Edsger Dijkstra</p>
                 <div class="social">
                         <h2>social</h2>
                         <ul>
-                            <li><a href="./feeds/all.atom.xml" rel="alternate">atom feed</a></li>
+                            <li><a href="http://rsegebre.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
                             
-                            <li><a href="./feeds/all.rss.xml" rel="alternate">rss feed</a></li>
+                            <li><a href="http://rsegebre.com/feeds/all.rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
                             
 
                         
@@ -137,7 +144,7 @@ Edsger Dijkstra</p>
 
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
-                Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>, which takes great advantages of <a href="http://python.org">python</a>.
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
                 </address><!-- /#about -->
 
                 <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
@@ -145,14 +152,15 @@ Edsger Dijkstra</p>
 
 
     <script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32786140-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
     </script>
-    <script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-32786140-1");
-    pageTracker._trackPageview();
-    } catch(err) {}</script>
 
 
 
