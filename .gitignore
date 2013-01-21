@@ -1,1 +1,6 @@
-.html
+pelican.conf.py
+pelican.conf.pyc
+bin/*
+posts/*
+lib/*
+include/*

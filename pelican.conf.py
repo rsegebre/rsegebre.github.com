@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
+#from pelican.plugins import pelican_gist
+
 AUTHOR = u'Roberto Segebre'
 DISQUS_SITENAME = 'rsegebre'
 SITENAME = u"rsegebre"
@@ -17,6 +19,7 @@ GITHUB_ACTIVITY_FEED = 'https://github.com/rsegebre.atom'
 GOOGLE_ANALYTICS = 'UA-32786140-1'
 DEFAULT_LANG='en'
 THEME = 'notmyidea'
+PLUGIN_PATH = './lib/python2.7/site-packages/'
 
 # Blogroll
 LINKS =  (
@@ -32,6 +35,10 @@ SOCIAL = (
 	  ('facebook', 'http://www.facebook.com/rsegebre'),
 	  ('linkedIn', 'http://www.linkedin.com/pub/roberto-segebre/40/8b1/6b2'),
          )
+
+# Plugins Pelican 3.0
+PLUGINS = ['pelican_gist',]
+
 TWITTER_USERNAME = 'rss1989'
 
 DEFAULT_PAGINATION = 5
