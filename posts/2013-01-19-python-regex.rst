@@ -52,6 +52,7 @@ Yeah, I know this regex is veeeery long regex, but I think it does a decent job 
 ~rs
 
 Resources:
+
 * `Python regex Module <http://docs.python.org/2/library/re.html>`_
 * `Python os Module <http://docs.python.org/2/library/os.html>`_
 * `Finding regex in file <http://stackoverflow.com/questions/4989198/python-find-regexp-in-a-file>`_

@@ -59,8 +59,56 @@
         
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="./quick-intro-to-regular-expressions-with-python.html">Quick Intro to regular expressions with Python</a></h1> 
+                    <h1 class="entry-title"><a href="./python-finite-state-machines.html">Python Finite State Machines</a></h1> 
                     <footer class="post-info">
+        <abbr class="published" title="2013-01-20T00:00:00">
+                Sun 20 January 2013
+        </abbr>
+
+        
+        <address class="vcard author">
+                By <a class="url fn" href="./author/roberto-segebre.html">Roberto Segebre</a>
+        </address>
+        
+<p>In <a href="./category/python.html">Python</a>. </p>
+<p>tags: <a href="./tag/blog.html">blog</a><a href="./tag/python.html">python</a></p>
+
+
+</footer><!-- /.post-info --><p>Check this short but sweet non-deterministic Finite State Machine Function that simply accepts a FSM and returns a string if it is not ambiguous!</p>
+<p>The idea is as follows:</p>
+<ul class="simple">
+<li>Take an edge if it has not already been visited, otherwise go to the next edge.</li>
+<li>If current state is final then you are done.</li>
+</ul>
+<p>[gist:id=4581658,file=fsm_accept.py]</p>
+<p>Any questions or comments please leave them below!</p>
+<p>~rs</p>
+<p>There are <a href="./python-finite-state-machines.html#disqus_thread">comments</a>.</p>
+                </article>
+                
+            </aside><!-- /#featured -->
+            
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+            
+
+        
+         
+            
+            <li><article class="hentry">    
+                <header>
+                    <h1><a href="./quick-intro-to-regular-expressions-with-python.html" rel="bookmark"
+                           title="Permalink to Quick Intro to regular expressions with Python">Quick Intro to regular expressions with Python</a></h1>
+                </header>
+                
+                <div class="entry-content">
+                <footer class="post-info">
         <abbr class="published" title="2013-01-19T00:00:00">
                 Sat 19 January 2013
         </abbr>
@@ -74,60 +122,12 @@
 <p>tags: <a href="./tag/blog.html">blog</a><a href="./tag/python.html">python</a></p>
 
 
-</footer><!-- /.post-info --><p>I recently had to use quite a lot of parsing in Python for work-related stuff, so I've been looking at what are some of the best ways to be able to parse patterns and the answer is of course, regular expressions! (I use Python because I feel more comfortable scripting in Pything than in Linux Shell). I hope to give you a quickstart into putting regular expressions in use!</p>
-<p>First of all a regular expression (a.k.a. regex) is a way to describe a pattern using some pre-defined symbols, of course the <a class="reference external" href="http://en.wikipedia.org/wiki/Regular_expression#Formal_language_theory">full definition</a> goes into language theory, grammars and other cool stuff that I won't talk about ;(. To get you started here are the basic symbols in Python used when defining regular expressions:</p>
-<pre class="literal-block">
-'[...]' - The squared brackets are the most helpful ones, you can define a range or set of elements, for example '[a-z] will find any one lower case letter or [123] will find only one number, 1,2 or 3. A statement with [...] is called a character class.
-'^' - Negates (aka finds the complement) of a character class, for example want to find anything but a lower case letter you will use [^a-z]. Goes at the beginning of a character class, outside of a character class it will try to match the regex only at the beginning of a line.
-'\' - You can use the '\' to escape any special character, for example if you want to find a backlash your regex would be '\\'.
-'+' &amp; '*' - These are one of my favorite symbols since they allow pretty powerful regexes. '*' repeats the matching of the preceding character or character class zero or more times. Versus '+' which does the same but repeat s the matching of the preceding character at least 1 or more times. Big difference there so be sure to remember, '*' zero or more and '+' one or more.
-</pre>
-<p>I think this gives us plenty to get started with writing pretty powerful regular expressions, or at least it did for me! :D So now for example picture you want to parse a log file that is formated the following way:</p>
-<pre class="literal-block">
-12/14/2012 13:30:00 [INFO: The world is getting close to an end.]
-12/21/2012 00:01:00 [ERROR: Damn, I guess it didn't, because I am still logging.]
-</pre>
-<p>So by taking a quick look at my example it is a pretty straightforward log, it contains [date] [time] [message], and they are all separated by a space.Now lets say we wanted to parse out all the dates for every line in this log. What regular expression would we use? First we need to open the file we wish to run the regex on. This is one way of doing it that allows you to open very big files by mapping them to the memory. I will be mapping it with read only access but you can also map with write access as well:</p>
-<pre class="literal-block">
-&gt;&gt;&gt; import re,mmap,os #Importing the regex module, plus a couple more
-&gt;&gt;&gt; f = open(&quot;log_name&quot;,&quot;r&quot;) #Assuming my log file is in a text file
-&gt;&gt;&gt; size = os.stat(&quot;/home/rsegebre/tests/log&quot;).st_size # stat returns info about the file and st_size returns the size of the file in bytes
-&gt;&gt;&gt; data = mmap.mmap(f.fileno(),size,access=mmap.ACCESS_READ) # Maps the file to memory for read only access, you can treat as a string and file object, allows you to work with biiiiig files)
-</pre>
-<p>Now we are ready to try running regexs against our file, have you had time to think of the regex to run? Here is one way of doing it:</p>
-<pre class="literal-block">
-&gt;&gt;&gt; re.findall(u&quot;[0-9]+/[0-9]+/[0-9]+&quot;,data)
-['12/14/2012', '12/21/2012']
-</pre>
-<p>So I just used the findall function in the re module which is the most helpful one for me, it does what the function name says, it finds all matches of your regular expression! Now let us break down the regex into a smaller components to make it more readable:</p>
-<pre class="literal-block">
-&quot;[0-9]&quot; - matches any one digit one time
-&quot;[0-9]+&quot; - matches any digit one or more times
-&quot;[0-9]+/&quot; - matches any digit one or more times that is immediately followed by a &quot;/&quot;
-</pre>
-<p>This easily fits the pattern that we have for our dates which is month/day/year. Is this the only way? Definitely no, there are plenty of ways for example your regular expression could be: u&quot;d+/d+/d+&quot; in which d is a shortcut for [0-9], there could be infinitely many regular expressions instead of the one I showed, but trying to keep them simple gets harder depending on what you are filtering for.</p>
-<p>Now lets say that the log file has a lot more lines, some lines are not formatted as earlier on, but we still only care about the lines that are formatted as earlier on ([date] [time] [message]) how do we write a regular expression to extract all the lines that fit this exact pattern only? One way to do it is as follows:</p>
-<pre class="literal-block">
-&gt;&gt;&gt; re.findall(u&quot;\d+/\d+/\d+ \d+:\d+:\d+ \[.*\]&quot;,data)
-['12/14/2012 13:30:00 [INFO: The world is getting close to an end.]', &quot;12/21/2012 00:01:00 [ERROR: Damn, I guess it didn't, because I am still logging.]&quot;]
-</pre>
-<p>Yeah, I know this regex is veeeery long regex, but I think it does a decent job of getting the data. Again, there are infinitely different regexs to find the same thing, but try to focus on the most complete regex that only gets you what you are looking for and nothing else. For example this regex could be further complete by instead specifying how many times I expect every number in the date or time. Anyways this is all I got to show you I hope this got you started and curious about regexs in general, as well as allow you to parse pretty much anything patterns you want! If you have any questions or comments please leave them below!</p>
-<p>~rs</p>
-<p>Resources:
-* <a class="reference external" href="http://docs.python.org/2/library/re.html">Python regex Module</a>
-* <a class="reference external" href="http://docs.python.org/2/library/os.html">Python os Module</a>
-* <a class="reference external" href="http://stackoverflow.com/questions/4989198/python-find-regexp-in-a-file">Finding regex in file</a></p>
-<p>There are <a href="./quick-intro-to-regular-expressions-with-python.html#disqus_thread">comments</a>.</p>
-                </article>
-                
-            </aside><!-- /#featured -->
-            
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
-            
-        
+</footer><!-- /.post-info -->
+                <p>I recently had to use quite a lot of parsing in Python for work-related stuff, so I've been looking at what are some of the best ways to be able to parse patterns and the answer is of course, regular expressions! (I use Python because I feel more comfortable ...</p>
+                <a class="readmore" href="./quick-intro-to-regular-expressions-with-python.html">read more</a>
+                <p>There are <a href="./quick-intro-to-regular-expressions-with-python.html#disqus_thread">comments</a>.</p>
+                </div><!-- /.entry-content -->
+            </article></li>
         
         
             
@@ -231,45 +231,6 @@ Edsger Dijkstra</p>
                 <p>One of my projects for my networks class was to build a website from scratch, in which we had to showcase the basics: html/css/javascript. So I built a simple website using a <a class="reference external" href="http://css-tricks.com/snippets/jquery/smooth-scrolling/">smoothscroll javascript</a> I found and <a class="reference external" href="http://spritely.net/">spritely</a> (a jQuery based sprite animation library to animate the little ...</p>
                 <a class="readmore" href="./deviruchi-website.html">read more</a>
                 <p>There are <a href="./deviruchi-website.html#disqus_thread">comments</a>.</p>
-                </div><!-- /.entry-content -->
-            </article></li>
-        
-        
-            
-
-        
-         
-            
-            <li><article class="hentry">    
-                <header>
-                    <h1><a href="./setting-up-your-github-website.html" rel="bookmark"
-                           title="Permalink to Setting up your github website">Setting up your github website</a></h1>
-                </header>
-                
-                <div class="entry-content">
-                <footer class="post-info">
-        <abbr class="published" title="2012-06-22T00:00:00">
-                Fri 22 June 2012
-        </abbr>
-
-        
-        <address class="vcard author">
-                By <a class="url fn" href="./author/roberto-segebre.html">Roberto Segebre</a>
-        </address>
-        
-<p>In <a href="./category/blog.html">Blog</a>. </p>
-<p>tags: <a href="./tag/blog.html">blog</a><a href="./tag/website.html">website</a><a href="./tag/pelican.html">pelican</a><a href="./tag/python.html">python</a><a href="./tag/github.html">github</a></p>
-
-
-</footer><!-- /.post-info -->
-                <p>I said in my first post that I was going to post a guide on how to set-up your own website using <a class="reference external" href="http://pelican.notmyidea.org/en/latest/">pelican</a> and <a class="reference external" href="http://www.github.com">github</a> from a Linux environment.</p>
-<div class="section" id="environment">
-<h2>Environment:</h2>
-<p>So if you are not already running Linux in your laptop, then you have some options:</p>
-<ol class="arabic simple">
-<li>Install Linux on a ...</li></ol></div>
-                <a class="readmore" href="./setting-up-your-github-website.html">read more</a>
-                <p>There are <a href="./setting-up-your-github-website.html#disqus_thread">comments</a>.</p>
                 </div><!-- /.entry-content -->
             </article></li>
         

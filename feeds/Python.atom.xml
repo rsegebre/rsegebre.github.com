@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>rsegebre</title><link href="http://rsegebre.com/" rel="alternate"></link><link href="http://rsegebre.com/feeds/Python.atom.xml" rel="self"></link><id>http://rsegebre.com/</id><updated>2013-01-19T00:00:00-05:00</updated><entry><title>Quick Intro to regular expressions with Python</title><link href="http://rsegebre.com/quick-intro-to-regular-expressions-with-python.html" rel="alternate"></link><updated>2013-01-19T00:00:00-05:00</updated><author><name>Roberto Segebre</name></author><id>tag:rsegebre.com,2013-01-19:quick-intro-to-regular-expressions-with-python.html</id><summary type="html">&lt;p&gt;I recently had to use quite a lot of parsing in Python for work-related stuff, so I've been looking at what are some of the best ways to be able to parse patterns and the answer is of course, regular expressions! (I use Python because I feel more comfortable scripting in Pything than in Linux Shell). I hope to give you a quickstart into putting regular expressions in use!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>rsegebre</title><link href="http://rsegebre.com/" rel="alternate"></link><link href="http://rsegebre.com/feeds/Python.atom.xml" rel="self"></link><id>http://rsegebre.com/</id><updated>2013-01-20T00:00:00-05:00</updated><entry><title>Python Finite State Machines</title><link href="http://rsegebre.com/python-finite-state-machines.html" rel="alternate"></link><updated>2013-01-20T00:00:00-05:00</updated><author><name>Roberto Segebre</name></author><id>tag:rsegebre.com,2013-01-20:python-finite-state-machines.html</id><summary type="html">&lt;p&gt;Check this short but sweet non-deterministic Finite State Machine Function that simply accepts a FSM and returns a string if it is not ambiguous!&lt;/p&gt;
+&lt;p&gt;The idea is as follows:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Take an edge if it has not already been visited, otherwise go to the next edge.&lt;/li&gt;
+&lt;li&gt;If current state is final then you are done.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[gist:id=4581658,file=fsm_accept.py]&lt;/p&gt;
+&lt;p&gt;Any questions or comments please leave them below!&lt;/p&gt;
+&lt;p&gt;~rs&lt;/p&gt;
+</summary><category term="blog"></category><category term="python"></category></entry><entry><title>Quick Intro to regular expressions with Python</title><link href="http://rsegebre.com/quick-intro-to-regular-expressions-with-python.html" rel="alternate"></link><updated>2013-01-19T00:00:00-05:00</updated><author><name>Roberto Segebre</name></author><id>tag:rsegebre.com,2013-01-19:quick-intro-to-regular-expressions-with-python.html</id><summary type="html">&lt;p&gt;I recently had to use quite a lot of parsing in Python for work-related stuff, so I've been looking at what are some of the best ways to be able to parse patterns and the answer is of course, regular expressions! (I use Python because I feel more comfortable scripting in Pything than in Linux Shell). I hope to give you a quickstart into putting regular expressions in use!&lt;/p&gt;
 &lt;p&gt;First of all a regular expression (a.k.a. regex) is a way to describe a pattern using some pre-defined symbols, of course the &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Regular_expression#Formal_language_theory"&gt;full definition&lt;/a&gt; goes into language theory, grammars and other cool stuff that I won't talk about ;(. To get you started here are the basic symbols in Python used when defining regular expressions:&lt;/p&gt;
 &lt;pre class="literal-block"&gt;
 '[...]' - The squared brackets are the most helpful ones, you can define a range or set of elements, for example '[a-z] will find any one lower case letter or [123] will find only one number, 1,2 or 3. A statement with [...] is called a character class.
@@ -38,8 +47,10 @@
 &lt;/pre&gt;
 &lt;p&gt;Yeah, I know this regex is veeeery long regex, but I think it does a decent job of getting the data. Again, there are infinitely different regexs to find the same thing, but try to focus on the most complete regex that only gets you what you are looking for and nothing else. For example this regex could be further complete by instead specifying how many times I expect every number in the date or time. Anyways this is all I got to show you I hope this got you started and curious about regexs in general, as well as allow you to parse pretty much anything patterns you want! If you have any questions or comments please leave them below!&lt;/p&gt;
 &lt;p&gt;~rs&lt;/p&gt;
-&lt;p&gt;Resources:
-* &lt;a class="reference external" href="http://docs.python.org/2/library/re.html"&gt;Python regex Module&lt;/a&gt;
-* &lt;a class="reference external" href="http://docs.python.org/2/library/os.html"&gt;Python os Module&lt;/a&gt;
-* &lt;a class="reference external" href="http://stackoverflow.com/questions/4989198/python-find-regexp-in-a-file"&gt;Finding regex in file&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Resources:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.python.org/2/library/re.html"&gt;Python regex Module&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://docs.python.org/2/library/os.html"&gt;Python os Module&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="http://stackoverflow.com/questions/4989198/python-find-regexp-in-a-file"&gt;Finding regex in file&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </summary><category term="blog"></category><category term="python"></category></entry></feed>
