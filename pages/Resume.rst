@@ -27,6 +27,15 @@ Technological Skills & Programming Languages:
 Working Experience:
 ===================
 
+
+**Healthcare Operations, Nuance Communications Inc**, Burlington, MA
+
+*Systems Administrator* July 2012 - present
+
+- OS and Application specific scripting in Python, Bash and Perl to achieve monitoring and automation tasks
+- Overall infrastructure level systems administration for Linux (CentOS), Windows Server (2000/2008), Cisco ASA, Active Directory, MySQL, MSSQL, Linux DNS, Nagios, Nexsan and Netapp
+- Documentation of each environment's architecture and troubleshooting procedures
+
 **Computer Science Department**, Colgate University
 
 *Teaching Assistant* Fall 2009 - Spring 2012
