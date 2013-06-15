@@ -20,8 +20,8 @@ Education & Honors:
 Technological Skills & Programming Languages:
 =============================================
 
-| Proficient in Java, Python and C
-| Familiar with C++, Haskell, JavaScript, Django, SQL, GitHub, MIPS Assembly, Eclipse and Linux
+| Currently using at work: Python, Shell, Linux CentOS, MySQL, MSSQL, Windows Server  and Nagios
+| Previously used: Java, C++/C, Haskell, JavaScript, Django, Git, MIPS Assembly, Eclipse
 |
 
 Working Experience:
@@ -32,9 +32,9 @@ Working Experience:
 
 *Systems Administrator* July 2012 - present
 
-- OS and Application specific scripting in Python, Bash and Perl to achieve monitoring and automation tasks
-- Overall infrastructure level systems administration for Linux (CentOS), Windows Server (2000/2008), Cisco ASA, Active Directory, MySQL, MSSQL, Linux DNS, Nagios, Nexsan and Netapp
-- Documentation of each environment's architecture and troubleshooting procedures
+- Python and shell scripting to achieve data gathering and scalable monitoring tasks that can also be used through the Nagios monitoring engine
+- Aid in developing the monitoring infrastructure (OS, application and network levels) across 5 datacenters throughout the world in a hybrid environment composed of Linux, Windows, Solaris and a wide array of networking devices
+- Member of a 6 person team in charge of deploying and automating code releases, documenting product architecture, investigating issues across multiple layers, building new servers and incident resolution 
 
 **Computer Science Department**, Colgate University
 
@@ -68,6 +68,10 @@ Working Experience:
 
 Leadership Experience:
 ======================
+`Code for Boston`_, Boston, MA
+- Lead and start developing Urbanite, a new open source web application using Ruby on Rails, MongoDB and Angular.js
+- Participate in weekly discussions regarding big data questions in regards to their civic applications and contribute ideas to the multiple Code for Boston project
+
 `Colgate International Community`_, Colgate University
 
 *President/Vice-President* Spring 2009 - Fall 2011
@@ -136,4 +140,4 @@ Economics related Courses:
 .. _`Amnesty International`: http://colgate.collegiatelink.net/organization/amnesty
 .. _`Resume PDF Version`: https://github.com/rsegebre/rsegebre.github.com/raw/master/static/pdfs/ROBERTO_SEGEBRE_RESUME.pdf
 .. _`Coursework PDF Version`: https://github.com/rsegebre/rsegebre.github.com/raw/master/static/pdfs/ROBERTO_SEGEBRE_COURSEWORK.pdf
- 
+.. _`Code for Boston`: https://github.com/organizations/codeforboston 
