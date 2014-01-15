@@ -1,105 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
-        <meta charset="utf-8">
-        <title>rsegebre - college</title>
-        <link rel="stylesheet" href="http://rsegebre.com/theme/css/main.css">
-                <link href="http://rsegebre.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="rsegebre Atom Feed" />
-                
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <title>rsegebre - college</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- Open Graph tags -->
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="rsegebre"/>
+            <meta property="og:url" content="http://rsegebre.com"/>
+            <meta property="og:description" content="rsegebre"/>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://rsegebre.com/theme/css/bootstrap.simplex.min.css" type="text/css"/>
+    <link href="http://rsegebre.com/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://rsegebre.com/theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://rsegebre.com/theme/css/style.css" type="text/css"/>
+
+        <link href="http://rsegebre.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="rsegebre ATOM Feed"/>
 </head>
+<body>
 
-<body id="index" class="home">
-<a href="http://github.com/rsegebre">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
-</a>
-        <header id="banner" class="body">
-                <h1><a href="http://rsegebre.com/">rsegebre </a></h1>
-                <nav><ul>
-                                                    <li><a href="http://rsegebre.com/pages/about.html">About</a></li>
-                                    <li><a href="http://rsegebre.com/pages/resume.html">Resume</a></li>
-                                                                    <li ><a href="http://rsegebre.com/category/blog.html">Blog</a></li>
-                                    <li ><a href="http://rsegebre.com/category/java.html">Java</a></li>
-                                    <li ><a href="http://rsegebre.com/category/python.html">Python</a></li>
-                                                </ul></nav>
-        </header><!-- /#banner -->
-                
-            
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://rsegebre.com/" class="navbar-brand">
+rsegebre            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://rsegebre.com/pages/about.html">
+                             About
+                          </a></li>
+                         <li><a href="http://rsegebre.com/pages/resume.html">
+                             Resume
+                          </a></li>
+                        <li >
+                            <a href="http://rsegebre.com/category/blog.html">Blog</a>
+                        </li>
+                        <li >
+                            <a href="http://rsegebre.com/category/java.html">Java</a>
+                        </li>
+                        <li >
+                            <a href="http://rsegebre.com/category/python.html">Python</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://rsegebre.com/archives.html"><i class="fa fa-th-list"></i>Archives</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
 
-                            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://rsegebre.com/deviruchi-website.html">Deviruchi Website</a></h1> 
-                    <footer class="post-info">
-        <abbr class="published" title="2012-07-14T00:00:00">
-                Sat 14 July 2012
-        </abbr>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
 
-                <address class="vcard author">
-                By <a class="url fn" href="http://rsegebre.com/author/roberto-segebre.html">Roberto Segebre</a>
-        </address>
-        <p>In <a href="http://rsegebre.com/category/blog.html">Blog</a>. </p>
-<p>tags: <a href="http://rsegebre.com/tag/blog.html">blog</a><a href="http://rsegebre.com/tag/website.html">website</a><a href="http://rsegebre.com/tag/college.html">college</a><a href="http://rsegebre.com/tag/deviruchi.html">deviruchi</a></p>
-</footer><!-- /.post-info --><p>One of my projects for my networks class was to build a website from scratch, in which we had to showcase the basics: html/css/javascript. So I built a simple website using a <a class="reference external" href="http://css-tricks.com/snippets/jquery/smooth-scrolling/">smoothscroll javascript</a> I found and <a class="reference external" href="http://spritely.net/">spritely</a> (a jQuery based sprite animation library to animate the little devil, called Deviruchi, from <a class="reference external" href="http://www.ragnarokonline.com/">Ragnarok Online</a> ). Besides the javascript, I also wrote the css and the html for the website as well as designed I guess (now it makes sense why it looks funky!), obtained most of the graphics from  a <a class="reference external" href="http://www.freevectorlibrary.com/">free vector library</a> and modified them.</p>
-<p>So you can check it out here:</p>
-<p><a class="reference external" href="http://rsegebre.com/static/sample_website">Deviruchi Website</a></p>
-<p>To check out the code behind it check out my github account (rsegebre.github.com/static/sample_website/).</p>
-<p>There are <a href="http://rsegebre.com/deviruchi-website.html#disqus_thread">comments</a>.</p>                </article>
-                                    <p class="paginator">
-        Page 1 / 1
-    </p>
-                            </aside><!-- /#featured -->
-                                                </ol><!-- /#posts-list -->
-                        </section><!-- /#content -->
-                    <section id="extras" class="body">
-                        <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                                                    <li><a href="http://cs.colgate.edu">Colgate COSC Dept. Website</a></li>
-                                                    <li><a href="http://www.codinghorror.com/blog/">Coding Horror Blog by Jeff Atwood</a></li>
-                                                    <li><a href="http://www.thisdeveloperslife.com">This Developer's Life</a></li>
-                                                </ul>
-                </div><!-- /.blogroll -->
-                                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="http://rsegebre.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
-                            
-                                                    <li><a href="http://twitter.com/rss1989">twitter</a></li>
-                                                    <li><a href="http://github.com/rsegebre">github</a></li>
-                                                    <li><a href="http://www.facebook.com/rsegebre">facebook</a></li>
-                                                    <li><a href="http://www.linkedin.com/pub/roberto-segebre/40/8b1/6b2">linkedIn</a></li>
-                                                </ul>
-                </div><!-- /.social -->
-                </section><!-- /#extras -->
+            <article>
+                <h2><a href="http://rsegebre.com/deviruchi-website.html">Deviruchi Website</a></h2>
+                <div class="summary"><p>One of my projects for my networks class was to build a website from scratch, in which we had to showcase the basics: html/css/javascript. So I built a simple website using a <a class="reference external" href="http://css-tricks.com/snippets/jquery/smooth-scrolling/">smoothscroll javascript</a> I found and <a class="reference external" href="http://spritely.net/">spritely</a> (a jQuery based sprite animation library to animate the little ...</p>
+                    <a class="btn btn-default btn-xs" href="http://rsegebre.com/deviruchi-website.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i>Social</h4></li>
+                    <li class="list-group-item"><a href="http://twitter.com/rss1989"><i
+                            class="fa fa-twitter-square fa-lg"></i>twitter
+                    </a></li>
+                    <li class="list-group-item"><a href="http://github.com/rsegebre"><i
+                            class="fa fa-github-square fa-lg"></i>github
+                    </a></li>
+                    <li class="list-group-item"><a href="http://www.facebook.com/rsegebre"><i
+                            class="fa fa-facebook-square fa-lg"></i>facebook
+                    </a></li>
+                    <li class="list-group-item"><a href="http://www.linkedin.com/pub/roberto-segebre/40/8b1/6b2"><i
+                            class="fa fa-linkedin-square fa-lg"></i>linkedIn
+                    </a></li>
 
+
+                <li class="list-group-item"><a href="http://rsegebre.com/"><h4><i class="fa fa-home fa-lg"></i>Categories</h4></a></li>
+                        <li class="list-group-item">
+                            <a href="http://rsegebre.com/category/blog.html">
+                                <i class="fa fa-folder-open fa-lg"></i>Blog
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="http://rsegebre.com/category/java.html">
+                                <i class="fa fa-folder-open fa-lg"></i>Java
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="http://rsegebre.com/category/python.html">
+                                <i class="fa fa-folder-open fa-lg"></i>Python
+                            </a>
+                        </li>
+
+                <li class="list-group-item"><a href="http://rsegebre.com/"><h4><i class="fa fa-tags fa-lg"></i>Tags</h4></a></li>
+                        <li class="list-group-item tag-1">
+                            <a href="http://rsegebre.com/tag/blog.html">
+                                blog
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="http://rsegebre.com/tag/python.html">
+                                python
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-2">
+                            <a href="http://rsegebre.com/tag/website.html">
+                                website
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="http://rsegebre.com/tag/pelican.html">
+                                pelican
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-3">
+                            <a href="http://rsegebre.com/tag/pydanny.html">
+                                pydanny
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/java.html">
+                                java
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/real-life.html">
+                                real-life
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/thumbtack.html">
+                                thumbtack
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/deviruchi.html">
+                                deviruchi
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/personal.html">
+                                personal
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/github.html">
+                                github
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/dns.html">
+                                DNS
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/projects.html">
+                                Projects
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/debugging.html">
+                                debugging
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://rsegebre.com/tag/college.html">
+                                college
+                            </a>
+                        </li>
+        </ul>
+    </section>
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2012 Roberto Segebre
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<!-- JavaScript plugins (requires jQuery) -->
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://rsegebre.com/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://rsegebre.com/theme/js/respond.min.js"></script>
     <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-32786140-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'rsegebre'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
     </script>
-<script type="text/javascript">
-    var disqus_shortname = 'rsegebre';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-32786140-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
 </body>
 </html>
