@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>rsegebre</title><link href="http://rsegebre.com/" rel="alternate"></link><link href="http://rsegebre.com/feeds/all-en.atom.xml" rel="self"></link><id>http://rsegebre.com/</id><updated>2014-01-08T00:00:00-05:00</updated><entry><title>A world without DNS</title><link href="http://rsegebre.com/a-world-without-dns.html" rel="alternate"></link><updated>2014-01-08T00:00:00-05:00</updated><author><name>Roberto Segebre</name></author><id>tag:rsegebre.com,2014-01-08:a-world-without-dns.html</id><summary type="html">&lt;p&gt;Have you ever tried remembering an IP address /32? How many (non-sequential) can you remember? For how many days! These questions always torment me everytime I can't get DNS to work on a new host or I am trying to reach a subset of hosts that were just created and have no DNS entries ( yeah, no DHCP). DNS is such an important part of our lives and it is a given for most people (except for non-techies) that I don't think many people realize how dependent we've become on it. Now imagine a DNS apocalypse, DNS servers across the world are broken and the only way to address websites now is through IP addresses and it was up to you to save the world! Every public and internal DNS server in the world died. What would you do?&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>rsegebre</title><link href="http://rsegebre.com/" rel="alternate"></link><link href="http://rsegebre.com/feeds/all-en.atom.xml" rel="self"></link><id>http://rsegebre.com/</id><updated>2014-01-26T00:00:00-05:00</updated><entry><title>Question #1</title><link href="http://rsegebre.com/question-1.html" rel="alternate"></link><updated>2014-01-26T00:00:00-05:00</updated><author><name>Roberto Segebre</name></author><id>tag:rsegebre.com,2014-01-26:question-1.html</id><summary type="html">&lt;p&gt;Question:&lt;/p&gt;
+&lt;p&gt;Write a standalone script or function that compresses a string based on the count of contiguous letters. For example, given abbcccdddd, the function will return, ab2c3d4.&lt;/p&gt;
+&lt;p&gt;Solution:
+PENDING&lt;/p&gt;
+&lt;p&gt;~rs&lt;/p&gt;
+</summary><category term="blog"></category><category term="question"></category><category term="python"></category></entry><entry><title>A world without DNS</title><link href="http://rsegebre.com/a-world-without-dns.html" rel="alternate"></link><updated>2014-01-08T00:00:00-05:00</updated><author><name>Roberto Segebre</name></author><id>tag:rsegebre.com,2014-01-08:a-world-without-dns.html</id><summary type="html">&lt;p&gt;Have you ever tried remembering an IP address /32? How many (non-sequential) can you remember? For how many days! These questions always torment me everytime I can't get DNS to work on a new host or I am trying to reach a subset of hosts that were just created and have no DNS entries ( yeah, no DHCP). DNS is such an important part of our lives and it is a given for most people (except for non-techies) that I don't think many people realize how dependent we've become on it. Now imagine a DNS apocalypse, DNS servers across the world are broken and the only way to address websites now is through IP addresses and it was up to you to save the world! Every public and internal DNS server in the world died. What would you do?&lt;/p&gt;
 &lt;p&gt;Well, I can think of a quick fix... When I was in college we built a very small DNS server that was pretty much a cache to store IP addresses and request lookups to a real DNS server if it didn't find it. All you had to do was point your browser to the local DNS server. We would just need a very reliable source to obtain all of our new information, or have a way of of obtaining all of our new DNS data and a purely decentralized way, without any authoritative servers telling our private local DNS cache who owns what domain.&lt;/p&gt;
 &lt;p&gt;This gives room to the concept of a purely decentralized DNS network in which we could pretty much update our small local DNS based on asking our peers, &amp;quot;Hey, Bob do you know the IP for johnnnies.com?&amp;quot;. If Bob says yes, then he shares it to you if Bob doesn't have it you can ask another peer in your network or have Bob ask some of his neighbors. Limiting the type of requests to two so far, (1) can I get an IP for url x? (2) can you ask your neighbors for URL x?. The main reason for (2) being that we probably want to avoid flooding the network if we just automatically ask all of our peers as soon as we get asked question (1) and we don't know the answer. This of course is starting to lead to a billion other questions, such as trust, discovery mechanisms, security and other topics of interest. When researching this idea I came across an initiative that seemed pretty interested called &lt;a class="reference external" href="http://www.hacker10.com/tag/oddns-review/"&gt;ODDNS&lt;/a&gt;, which came as a way to prevent censorship and allowing people to manage their own domains, which of coursed probably generated a lot of opposition... :( so I think the initiative died out, but my guess is that is was probably terminated by external parties.&lt;/p&gt;
 &lt;p&gt;The main problem I can think of is trust, how do you know that the data your peer provided is valid? It would be really hard to establish who is the owner of a domain or subdomain without an authoritative name server as it currently works, which is were a lot of corporations and governments exert their authority by filtering out unwanted domains and censoring content. So if we were to think of how to trust the results of a peer I would say that we should rely on the peer-to-peer nature of the network and ask multiple neighbors and then compare results. We could also have an authority function for each peer that depends on your previous interactions, number of direct hits (peer you asked knows the answer without asking any other peers) and data validation with other peers. Far from ever receiving 100% accurate data as long as you can minimize the risk of obtaining false or malicious data (man-in-the-middle or redirection attacks), we could have a DNS replacement systems that works most of the time and is stable enough to be usable. Yet having a market for this information or a super-peer that provides data and has a very high ranking authority seems unavoidable, specially if it is a known authority (ie Google, Microsoft, etc). This super-peer can be any authority as voted by the majority of the other peers, which makes me think that this alternative DNS network would eventually transform into a centralized-descentralized network but at least it would leave the opportunity for new peers to come and go and chose who to trust, making super-peers only as authoritative as other peers allow them to, not to mention that this might decrease government censorship.&lt;/p&gt;
@@ -15,7 +20,53 @@
 &lt;li&gt;Take an edge if it has not already been visited, otherwise go to the next edge.&lt;/li&gt;
 &lt;li&gt;If current state is final then you are done.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;[gist:id=4581658,file=fsm_accept.py]&lt;/p&gt;
+&lt;div class="gist"&gt;
+    &lt;script src='https://gist.github.com/4581658.js?file=fsm_accept.py'&gt;&lt;/script&gt;
+    &lt;noscript&gt;
+        &lt;pre&gt;&lt;code&gt;# I was following the Udacity Programming Languages course and this one was actually challenging and fun to figure out.
+# Roberto S. 1/20/2013
+
+edges = { (1,'h'):[3,2],
+          (3,'h'):[3],
+          (2,'h'):[3],
+          (2,'t'):[4],
+          (4,'m'):[5],
+          (5,'l'):[6] }
+accepting = [6]
+"""accept a NFSM and returns only one (the shortest) string possible. Returns a string if the fsm is not ambiguos or None if it is.
+  :param current: current state - integer 
+  :param edges: edges in fsm machine - dictionary - {(integer,string):[integer]}
+  :param accepting: Final state in a FSM
+  :param visited: States already visited, to avoid infinite loops."""
+  
+def nfsmacceptor(current, edges, accepting, visited): 
+    # write your code here
+    if current in accepting:
+        return ""
+    else:
+        if current in visited:
+            return None
+        else:
+            for edge in edges:
+                if current in edge:
+                    for state in edges[edge]:    
+                        temp= nfsmacceptor(state, edges, accepting, (visited + [current]))
+                        if temp is None:
+                            continue
+                        else:
+                            return edge[1] + temp
+                    
+
+        
+print "Test Expected Output:\"html\": " + str(nfsmacceptor(1, edges, accepting, [])) 
+print "Test Expected Output:\"htm\": " + str(nfsmacceptor(1, edges, [5,6], [])) 
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/noscript&gt;
+&lt;/div&gt;
 &lt;p&gt;Any questions or comments please leave them below!&lt;/p&gt;
 &lt;p&gt;~rs&lt;/p&gt;
 </summary><category term="blog"></category><category term="python"></category></entry><entry><title>Quick Intro to regular expressions with Python</title><link href="http://rsegebre.com/quick-intro-to-regular-expressions-with-python.html" rel="alternate"></link><updated>2013-01-19T00:00:00-05:00</updated><author><name>Roberto Segebre</name></author><id>tag:rsegebre.com,2013-01-19:quick-intro-to-regular-expressions-with-python.html</id><summary type="html">&lt;p&gt;I recently had to use quite a lot of parsing in Python for work-related stuff, so I've been looking at what are some of the best ways to be able to parse patterns and the answer is of course, regular expressions! (I use Python because I feel more comfortable scripting in Pything than in Linux Shell). I hope to give you a quickstart into putting regular expressions in use!&lt;/p&gt;
